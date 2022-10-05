@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    margin: 1;
+    margin: 0;
 }
 
 header, footer {
@@ -22,3 +22,10 @@ section {
     width: 50%;
 }
 
+/* Small Devices */
+@media screen and (max-width: 800px) {
+    section{
+        background: blue;
+    }
+
+}

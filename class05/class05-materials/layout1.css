@@ -10,15 +10,15 @@ header, footer {
 }
 
 section {
-    height: 100px;
+    height: 300px;
     width: 33.33%;
     border: 1px solid black;
     float: left;
+    color: green;
 }
 
 .bottom-section {
-    height: 200px;
+    height: 400px;
     width: 50%;
-    background: red;
 }
 

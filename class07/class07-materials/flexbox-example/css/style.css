@@ -29,9 +29,23 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+header, footer {
+     height: 100PX;
+     border: 1px solid black;
+}
 
+section{
+     height: 200px;
+     border: 1px solid black;
+     flex: 1;
+}
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+main, .bottom {
+     display: flex;
+}
+

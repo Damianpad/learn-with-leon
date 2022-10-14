@@ -14,17 +14,22 @@
     text-align: center;
   }
   img{
-    display: block;
+    display: flex;
     height: 300px;
     margin: 0 auto;
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
   }
   ul {
     width: 100px;
     height: 397px;
-    border: 3px solid black;
     margin: 0 auto;
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
   }
   ul:hover {
     cursor: pointer;
@@ -35,6 +40,10 @@
     height: 65px;
   }
   
+  .champSelect {
+    align-items: center;
+    justify-content: center;
+  }
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
@@ -56,3 +65,38 @@
   #white {
     background: white;
   }
+
+
+
+  body {
+    background-image: url('https://wallpaperaccess.com/full/2379010.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  #background-image {
+    filter: blur(4px);
+  }
+
+  /* img {
+    display: flex;
+
+  } */
+
+  #championSplash {
+    width: 1214px;
+    height: 716px;
+    object-fit: contain;
+  }
+
+  /* Media Queries */
+@media screen and (max-width: 600px) {
+
+
+  #championSplash {
+    object-fit: contain;
+    width: 400px;
+    height: 400px;
+  }
+}

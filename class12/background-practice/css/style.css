@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
 /******************************************
 /* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
 /*******************************************/
@@ -69,10 +71,11 @@
 
 
   body {
-    background-image: url('https://wallpaperaccess.com/full/2379010.jpg');
+    background: rgb(13,54,56);
     background-size: cover; 
     background-repeat: no-repeat;
     color: white;
+    font-family: 'Roboto', sans-serif;
   }
 
   #background-image {
@@ -88,6 +91,15 @@
     width: 1214px;
     height: 716px;
     object-fit: contain;
+  }
+
+  .selectedChamp {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .selectedChamp aside {
+    margin-right: 200px;
   }
 
   /* Media Queries */

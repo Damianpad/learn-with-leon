@@ -2,6 +2,7 @@ document.querySelector('#aatrox').onclick = aatrox;
 document.querySelector('#ahri').onclick = ahri;
 document.querySelector('#akali').onclick = akali;
 document.querySelector('#akshan').onclick = akshan;
+document.querySelector('#alistar').onclick = alistar;
 
 let champName;
 let champTitle;
@@ -36,6 +37,15 @@ function akshan() {
     champName = 'AKSHAN';
     champTitle = 'THE ROGUE SENTINEL'
     document.querySelector('#championSplash').style.backgroundImage = "url('splash/Akshan.jpg')"
+    document.querySelector('.championName').innerText = champName;
+    document.querySelector('.championTitle').innerText = champTitle;
+}
+
+function alistar() {
+    console.log('WORKING');
+    champName = 'ALISTAR'
+    champTitle = 'THE MINOTAUR'
+    document.querySelector('#championSplash').style.backgroundImage = "url('splash/Alistar_0.jpg')"
     document.querySelector('.championName').innerText = champName;
     document.querySelector('.championTitle').innerText = champTitle;
 }

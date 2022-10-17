@@ -15,12 +15,19 @@ Converted value is displayed in the DOM by using an h2 with the class of .placeT
 
 */
 
-document.querySelector('#convert').addEventListener('click', run);
+document.querySelector('#convertCelsius').addEventListener('click', convertCelsius);
+document.querySelector('#convertFahrenheit').addEventListener('click', convertFahrenheit)
 
-function run() {
+function convertCelsius() {
     const fahrenheit = document.querySelector('#fahrenheit').value
     const celsius = (fahrenheit - 32) * 5/9
-    document.querySelector('#placeToSee').innerText = `${fahrenheit} Fahrenheit is converted to ${celsius} celsius`
+    document.querySelector('#placeToSeeCelsius').innerText = `${fahrenheit} Fahrenheit is converted to ${celsius} celsius`
+}
+
+function convertFahrenheit() {
+    const celsius = document.querySelector('#celsius').value
+    const fahrenheit = celsius * 9/5 + 32
+    document.querySelector('#placeToSeeFahrenheit').innerText = `${celsius} Celsius  is converted to ${fahrenheit} Fahrenheit`
 }
 
 

@@ -17,22 +17,25 @@ function sumOfNum(num1, num2, num3, num4) {
 console.log(sumOfNum(1, 2, 3, 4));
 
 // Create a function that takes in 2 numbers. Console log the first number to the power of the second. Call the function.
-// function powerOf(num1, num2) {
-//     console.log(num1);
-//     console.log(Math.pow(num2, 2));
-// }
+function powerOf(num1, num2) {
+    console.log(num1);
+    console.log(Math.pow(num1, num2));
+}
 
-// console.log(powerOf(1, 2));
+console.log(powerOf(1, 2));
 
 // *Conditionals*
 // Create a function that takes in a boolean and a string. If the boolean is true, alert the string. If the boolean is false, console log the string
-function isTrue(isBool, myStr){
-    if (isBool) {
-        alert(myStr);
-    } else {
-        console.log(myStr);
-    }
-}
+
+// function isTrue(isBool, myStr){
+//     if (isBool) {
+//         alert(myStr);
+//     } else {
+//         console.log(myStr);
+//     }
+// }
+
+const isTrue = (isBool, myStr) => b ? alert(myStr) : console.log(myStr);
 
 isTrue(false, "OHHH YEAHHH")
 
@@ -44,4 +47,4 @@ function logValues(num) {
     }
 }
 
-logValues(100);
+logValues(10);

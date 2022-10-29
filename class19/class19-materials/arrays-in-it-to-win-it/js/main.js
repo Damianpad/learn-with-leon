@@ -9,3 +9,11 @@ console.log(movies.length);
 //was really large and you didn't know the last index? Would your solution still work?
 let lastElement = movies.length - 1
 console.log(lastElement);
+
+
+
+let bestColors = ['green', 'blue', 'yellow', 'black']
+
+for (let i = 0; i <= bestColors.length; i++) {
+    console.log(bestColors[i]);
+}

@@ -6,6 +6,7 @@ console.log(favColor);
 let addTen = 10
 addTen += 10
 console.log(addTen);
+
 // *Functions*
 // Create a function that subtracts 4 numbers and alerts the difference
 function subtractsFourNums(n1, n2, n3, n4) {
@@ -13,6 +14,7 @@ function subtractsFourNums(n1, n2, n3, n4) {
 }
 
 subtractsFourNums(100,2,5,3)
+subtractsFourNums(200,10,100,2)
 
 // Create a function that divides one number by another and returns the remainder
 function dividesNums(n1, n2) {

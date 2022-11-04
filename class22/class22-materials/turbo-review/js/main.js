@@ -13,8 +13,17 @@ if (multipleFruits.includes == true){
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
 function play(){
-
+    let random = Math.random()
+    if (random < .33){
+        console.log('Rock');
+    } else if (random < 66){
+        console.log('Paper');
+    } else {
+        console.log('Scissors');
+    }
 }
+
+console.log(play());
 // *Conditionals*
 //Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
 

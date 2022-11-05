@@ -12,40 +12,90 @@ if (multipleFruits.includes == true){
 }
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible
-function play(){
-    let random = Math.random()
-    if (random < .33){
-        return 'Rock'
-    } else if (random < .66){
-        return 'Paper'
-    } else {
-        return 'Scissors'
-    }
-}
+// function play(){
+//     let random = Math.random()
+//     if (random < .33){
+//         return 'Rock'
+//     } else if (random < .66){
+//         return 'Paper'
+//     } else {
+//         return 'Scissors'
+//     }
+// }
 
-console.log(play());
+// console.log(play());
 // *Conditionals*
 //Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
 
-function choose(playerChoice){
-    let botChoice = play()
-    console.log(`The bot chose: ${botChoice}`);
-    if ((playerChoice === 'Rock' && botChoice === 'Scissors') || 
-    (playerChoice === 'Paper' && botChoice === 'Rock') ||
-    (playerChoice === 'Scissors' && botChoice === 'Paper')) {
-        console.log('YOU WIN!');
-    } else if (playerChoice === botChoice){
-        console.log('YOU TIED!');
+// function choose(playerChoice){
+//     let botChoice = play()
+//     console.log(`The bot chose: ${botChoice}`);
+//     if ((playerChoice === 'Rock' && botChoice === 'Scissors') || 
+//     (playerChoice === 'Paper' && botChoice === 'Rock') ||
+//     (playerChoice === 'Scissors' && botChoice === 'Paper')) {
+//         console.log('YOU WIN!');
+//     } else if (playerChoice === botChoice){
+//         console.log('YOU TIED!');
+//     } else {
+//         console.log('YOU LOSE!');
+//     }
+// }
+
+// choose('Rock')
+//*Loops*
+//Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
+// function results(arr){
+//     arr.forEach(choice => choose(choice));
+// }
+
+// results(['Rock', 'Paper', 'Scissors'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *Functions*
+// Create a function that returns rock, paper, or scissors as randomly as possible
+function randomChoice() {
+    let random = Math.random()
+    if (random < .33){
+        return 'rock'
+    } else if (random < .66){
+        return 'paper'
     } else {
-        console.log('YOU LOSE!');
+        return 'scissors'
     }
 }
 
-choose('Rock')
+console.log(randomChoice());
+
+// *Conditionals*
+//Create a function that takes in a choice (rock, paper, or scissors) and determines if they won a game of rock paper scissors against a bot using the above function
+function playGame(playerChoice) {
+    let botChoice = randomChoice()
+    console.log(`The bot chose: ${botChoice}`);
+    if ((playerChoice === 'rock' && botChoice === 'scissors') || 
+    (playerChoice == 'paper' && botChoice === 'rock') || 
+    (playerChoice === 'scissors' && botChoice === 'paper')){
+        console.log('You WIN');
+    } else if (playerChoice === botChoice) {
+        console.log('You TIE');
+    }
+}
 //*Loops*
 //Create a function that takes an array of choices. Play the game x times where x is the number of choices in the array. Print the results of each game to the console.
-function results(arr){
-    arr.forEach(choice => choose(choice));
+
+function playTimes(arr) {
+    arr.forEach(element => playGame(element));
 }
 
-results(['Rock', 'Paper', 'Scissors'])
+playTimes(['rock', 'rock', 'rock', 'paper'])

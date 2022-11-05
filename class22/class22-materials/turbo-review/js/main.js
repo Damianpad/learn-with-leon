@@ -15,11 +15,11 @@ if (multipleFruits.includes == true){
 function play(){
     let random = Math.random()
     if (random < .33){
-        console.log('Rock');
-    } else if (random < 66){
-        console.log('Paper');
+        return 'Rock'
+    } else if (random < .66){
+        return 'Paper'
     } else {
-        console.log('Scissors');
+        return 'Scissors'
     }
 }
 
@@ -29,12 +29,15 @@ console.log(play());
 
 function choose(playerChoice){
     let botChoice = play()
-    if ((playerChoice == 'Rock' && botChoice == 'Scissors') || 
-    (playerChoice == 'Paper' && botChoice == 'Rock') ||
-    (playerChoice == 'Scissors' && botChoice == 'Paper')) {
-        console.log('YOU WIN');
+    console.log(`The bot chose: ${botChoice}`);
+    if ((playerChoice === 'Rock' && botChoice === 'Scissors') || 
+    (playerChoice === 'Paper' && botChoice === 'Rock') ||
+    (playerChoice === 'Scissors' && botChoice === 'Paper')) {
+        console.log('YOU WIN!');
+    } else if (playerChoice === botChoice){
+        console.log('YOU TIED!');
     } else {
-        'YOU LOSE'
+        console.log('YOU LOSE!');
     }
 }
 

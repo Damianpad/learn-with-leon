@@ -1,7 +1,18 @@
 // *Variables*
 // Declare a variable and assign it to a sentance as a string. Alert if the sentance is a question
+let str = 'What\'s your name'
+
+if (str.endsWith('?')){
+    alert(str)
+}
 
 //Declare a variable, assign it a string of multiple words, replace every "jr. dev" with "software engineer", and print it to the console
+let careerStatus = "I'm a jr. dev"
+
+
+    console.log(careerStatus.replaceAll('jr. dev', 'software engineer'))
+    console.log(careerStatus);
+
 
 // *Functions*
 // Create a function that returns rock, paper, or scissors as randomly as possible

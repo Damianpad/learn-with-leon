@@ -25,8 +25,25 @@ Write a function that takes an array of numbers and returns the sum of the numbe
 The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
 */
 
-function sum(numbers){
-  return numbers.reduce((a,b) => a + b,0 )
-}
+// function sum(numbers){
+//   return numbers.reduce((a,b) => a + b,0 )
+// }
 
-console.log(sum([1,5.2,4,0,-1]));
+// console.log(sum([1,5.2,4,0,-1]));
+
+
+/*  
+Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+Examples (Input -> Output):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+Good Luck!
+*/
+
+
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
+
+
+console.log(doubleChar('abc'));

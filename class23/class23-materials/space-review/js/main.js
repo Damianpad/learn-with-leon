@@ -1,10 +1,11 @@
 //Arrays
 
 //Create and array of numbers. Sum all of the numbers. Alert the sum.
-let arr = [2,3,4,5,6,10]
+let arr = [1,2,3,4,5]
 
 let sum = arr.reduce((acc, c) => acc + c,0)
-alert(sum)
+
+console.log(sum);
 //Create a function that takes in an array of numbers
 //Return a new array of numbers that is every original number squared
 

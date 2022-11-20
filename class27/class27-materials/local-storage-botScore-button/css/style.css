@@ -19,3 +19,37 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+body {
+  background:#202845;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+button {
+  background: #070C21;
+  color: white;
+  border: none;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 20px;
+  font-size: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+}

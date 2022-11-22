@@ -1,12 +1,17 @@
 /******************************************
 /* CSS
 /*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 /* Box Model Hack */
 *{
   box-sizing: border-box;
 }
 
+body {
+  background: #308834;
+  color: white;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -19,3 +24,34 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+.game-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.deal-btn {
+  background: #024606;
+  color: white;
+  border: 1px solid #024606;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.deal-btn:hover {
+  cursor: pointer;
+  background: #146819;
+  border: 1px solid #8ACA8E;
+}
+
+.player-section {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.player1-section, .player2-section {
+  text-align: center;
+}

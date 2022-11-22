@@ -13,17 +13,43 @@
 	</head>
 	<body>
 
-		<h1>Card Game</h1>
+		<section class="game-title">
+			<h1>War</h1>
+			<h3 id="result">Result</h3>
 
-		<button>Deal Two Cards!</button>
+			<button class="deal-btn">Deal Two Cards!</button>
+		</section>
 
-		<h2>Player 1</h2>
-		<img id="player1" src="" alt="playing card">
-		<h3 class="card-result1"></h3>
 
-		<h2>Player 2</h2>
-		<img id="player2" src="" alt="playing card">
-		<h3 class="card-result2"></h3>
+		<section class="player-section">
+
+			<section class="player1-section">
+				<h2>Player 1</h2>
+				<h3 id="player1-score">0</h3>
+				<img id="player1" src="" alt="playing card">
+				<h3 class="card-result1"></h3>
+
+				<section class="player1-war">
+					<img class="player1-war-img" src="" alt="">
+					<h3 class="war-result1"></h3>
+				</section>
+			</section>
+
+			<section class="player2-section">
+				<h2>Player 2</h2>
+				<h3 id="player2-score">0</h3>
+				<img id="player2" src="" alt="playing card">
+				<h3 class="card-result2"></h3>
+
+				<section class="player2-war">
+					<img class="player2-war-img" src="" alt="">
+					<h3 class="war-result2"></h3>
+				</section>
+			</section>
+		</section>
+
+
+
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

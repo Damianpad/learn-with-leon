@@ -1,6 +1,8 @@
 //Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', drawTwo)
 let deckId = ''
+let player1Pile = 0
+let P
 let player1Score = 0
 let player2Score = 0
 
@@ -32,9 +34,11 @@ function drawTwo(){
         let player2Value = convertToNum(data.cards[1].value)
 
         if (player1Value > player2Value){
+          
           player1Score += 1
           document.querySelector("#result").innerText = "Result: Player 1 Wins"
           document.querySelector('#player1-score').innerText = player1Score
+          document.querySelector('player1-pile').src = 
 
         } else if (player2Value > player1Value){
           player2Score += 1
@@ -98,5 +102,14 @@ function resetWarCards(){
   document.querySelector('.war-result2').innerText = ""
 }
 
+function addToPile(){
+  fetch(`https://www.deckofcardsapi.com/api/deck/${deckId}/pile/<<pile_name>>/add/?cards=AS,2S`)
+  .then(res => res.json()) // parse response as JSON
+  .then(data => {
+})
+.catch(err => {
+  console.log(`error ${err}`)
+})
+}
 
 

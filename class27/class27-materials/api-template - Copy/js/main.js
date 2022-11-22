@@ -2,7 +2,7 @@
 document.querySelector('button').addEventListener('click', drawTwo)
 let deckId = ''
 let player1Pile = 0
-let P
+let Player2Pile = 0
 let player1Score = 0
 let player2Score = 0
 
@@ -38,7 +38,7 @@ function drawTwo(){
           player1Score += 1
           document.querySelector("#result").innerText = "Result: Player 1 Wins"
           document.querySelector('#player1-score').innerText = player1Score
-          document.querySelector('player1-pile').src = 
+          document.querySelector('player1-pile').src = player1Pile
 
         } else if (player2Value > player1Value){
           player2Score += 1

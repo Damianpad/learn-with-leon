@@ -1,11 +1,22 @@
 //Example fetch using pokemonapi.co
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('button').addEventListener('click', checkList)
+
+function checkList(){
+  if (document.querySelector('li')) {
+    resetResults()
+  } else {
+    getFetch()
+  }
+}
+
 
 function getFetch(){
+
+ 
   const choice = document.querySelector('input').value
   console.log(choice)
   const url = `http://openlibrary.org/search.json?q=${choice}`
-  // const url = `https://openlibrary.org/isbn/${choice}.json`
+
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -44,5 +55,10 @@ function getFetch(){
       .catch(err => {
           console.log(`error ${err}`)
       });
+}
+
+function resetResults(){
+  document.querySelector('li').innerHTML = ""
+  getFetch()
 }
 

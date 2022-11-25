@@ -31,10 +31,16 @@ function getFetch(){
             console.log(element.title);
             resultCount += 1
             
+            // Create li of search results
             let el = document.createElement('li')
             el.innerHTML = element.title
             el.classList.add(`cell-wrapper${resultCount}`)
             document.querySelector(`.book-results`).appendChild(el) 
+
+            // let bookInfo = document.createElement('span')
+            // bookInfo = element.author_name
+            // bookInfo.classList.add('book-info')
+            // document.querySelector(`cell-wrapper${resultCount}`).appendChild(bookInfo)
 
 
             console.log(element.cover_i);
@@ -48,14 +54,10 @@ function getFetch(){
               bookImg.classList.add(`cell-image${resultCount}`)
               document.querySelector(`.cell-wrapper${resultCount}`).appendChild(bookImg)
             }
-            
-
-            
 
 
-            
 
-
+            document.querySelector(`.cell-wrapper${resultCount}`).classList.add('.cell-wrapper')
 
         });
 
@@ -69,4 +71,5 @@ function resetResults(){
   document.querySelector('li').innerHTML = ""
   getFetch()
 }
+
 

@@ -99,7 +99,7 @@ body {
 .cell-image {
   width: 25%;
   margin: 0;
-  
+  background: red;
 }
 
 .book-info {

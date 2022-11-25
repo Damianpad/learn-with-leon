@@ -8,6 +8,7 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  margin: 0;
 }
 
 /******************************************
@@ -67,7 +68,7 @@ body {
   margin: 2em
 }
 
-.header button {
+.header button, .favorites {
   background: var(--secondary-color);
   color: var(--accent-color);
   font-family: 'Noto Serif', serif;
@@ -79,4 +80,30 @@ body {
 
 .header button:hover {
   cursor: pointer;
+}
+
+/* Book Results */
+.book-results {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  padding: 0;
+}
+
+.cell-wrapper {
+  display: flex;
+  justify-content: space-around;
+  background: red;
+}
+
+.cell-image {
+  width: 25%;
+  margin: 0;
+  
+}
+
+.book-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
 }

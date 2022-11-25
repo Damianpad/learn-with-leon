@@ -24,28 +24,36 @@ function getFetch(){
         console.log(data)
         
         let bookTitle = data.docs.title
-        // document.querySelector('.book-cover').src = bookCover
-        // document.querySelector('.book-title').innerText = bookTitle
-        // console.log(data.docs[0])
+        let resultCount = 0
 
-
-        // document.querySelector('li').remove
         titleArr = data.docs
         titleArr.forEach(element => {
             console.log(element.title);
-            
-            // let bookCover = element.docs.covers_i
-            
-            // document.querySelector('.book-cover').src = bookCoverLink
+            resultCount += 1
             
             let el = document.createElement('li')
             el.innerHTML = element.title
-            document.querySelector('.book-results').appendChild(el)
+            el.classList.add(`cell-wrapper${resultCount}`)
+            document.querySelector(`.book-results`).appendChild(el) 
+
 
             console.log(element.cover_i);
             let bookImg = document.createElement('img')
-            bookImg.src = `https://covers.openlibrary.org/b/id/${element.cover_i}-M.jpg`
-            document.querySelector('.book-results').appendChild(bookImg)
+            if ( element.cover_i == undefined){
+              bookImg.src = `https://drupal.nypl.org/sites-drupal/default/files/blogs/J5LVHEL.jpg`
+              bookImg.classList.add(`cell-image${resultCount}`)
+              document.querySelector(`.cell-wrapper${resultCount}`).appendChild(bookImg)
+            } else {
+              bookImg.src = `https://covers.openlibrary.org/b/id/${element.cover_i}-M.jpg`
+              bookImg.classList.add(`cell-image${resultCount}`)
+              document.querySelector(`.cell-wrapper${resultCount}`).appendChild(bookImg)
+            }
+            
+
+            
+
+
+            
 
 
 

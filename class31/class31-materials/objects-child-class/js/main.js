@@ -50,3 +50,7 @@ class Zebra extends Wild{
         super(name,color, habitat)
     }
 }
+
+let marty = new Zebra('Marty', 'Black and White', 'Grasslands')
+console.log(marty.speak());
+console.log(marty.habitat);

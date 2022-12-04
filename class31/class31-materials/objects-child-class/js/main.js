@@ -54,3 +54,12 @@ class Zebra extends Wild{
 let marty = new Zebra('Marty', 'Black and White', 'Grasslands')
 console.log(marty.speak());
 console.log(marty.habitat);
+
+class Lion extends Wild{
+    constructor(name, color, habitat){
+        super(name,color,habitat)
+    }
+}
+
+let alex = new Lion('Alex', 'Tan', 'Open Plains')
+console.log(alex.habitat);

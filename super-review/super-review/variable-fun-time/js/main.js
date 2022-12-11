@@ -20,15 +20,15 @@ console.log(myNum)
 
 //--- Hard
 //create a variable that holds the h1
-// let myTitle = document.querySelector('h1')
+let myTitle = document.querySelector('h1')
 
 //add an event listener to that element that console logs the sum of the two previous variables
-document.querySelector('h1').addEventListener('click', addValues)
+myTitle.addEventListener('click', addValues)
 
 function addValues(){
-    let inputValue = document.querySelector('#danceDanceRevolution').value
+    let inputValue = Number(document.querySelector('#danceDanceRevolution').value)
     
-    console.log(myNum + Number(inputValue)); 
+    console.log(myNum + inputValue); 
 }
 
 

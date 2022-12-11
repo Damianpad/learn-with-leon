@@ -32,6 +32,7 @@ check.addEventListener('click', checkAge)
 function checkAge() {
     const age = Number(document.querySelector('#danceDanceRevolution').value)
     console.log(age);
+    document.querySelector('p').innerText = age
 
     if (age < 16){
         console.log('You cannot drive');

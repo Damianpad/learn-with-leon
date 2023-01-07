@@ -8,6 +8,9 @@ async function apiRequest(){
 
         console.log(data)
         document.querySelector('h2').innerText = data.alterEgo
+        document.querySelector('#species').innerText = data.species
+        document.querySelector('#origin').innerText = data.placeOfOrigin
+        document.querySelector('#abilities').innerText = data.abilities[1]
     }catch(error){
         console.log(error)
     }

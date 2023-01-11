@@ -11,6 +11,7 @@ async function apiRequest(){
         document.querySelector('#species').innerText = data.species
         document.querySelector('#origin').innerText = data.placeOfOrigin
         document.querySelector('#abilities').innerText = data.abilities[1]
+        document.querySelector('#img').src = data.img
     }catch(error){
         console.log(error)
     }

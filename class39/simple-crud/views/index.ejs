@@ -1,0 +1,12 @@
+<h1>Current quotes</h1>
+<ul class="quotes">
+<% for(let i=0; i < info.length; i++) {%>
+    <li class="quote">
+        <span><%= info[i].name %></span>
+        <span><%= info[i].quote %></span>
+        <span class='del'>delete</span>
+    </li>
+<% } %>
+</ul>
+
+<h2>Add A Rapper:</h2>
